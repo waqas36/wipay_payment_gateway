@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="wipay_payment.list">
+      <field name="name">wipay_payment list</field>
+      <field name="model">wipay_payment.wipay_payment</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="wipay_payment.action_window">
+      <field name="name">wipay_payment window</field>
+      <field name="res_model">wipay_payment.wipay_payment</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="wipay_payment.action_server">
+      <field name="name">wipay_payment server</field>
+      <field name="model_id" ref="model_wipay_payment_wipay_payment"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="wipay_payment" id="wipay_payment.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="wipay_payment.menu_1" parent="wipay_payment.menu_root"/>
+    <menuitem name="Menu 2" id="wipay_payment.menu_2" parent="wipay_payment.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="wipay_payment.menu_1_list" parent="wipay_payment.menu_1"
+              action="wipay_payment.action_window"/>
+    <menuitem name="Server to list" id="wipay_payment" parent="wipay_payment.menu_2"
+              action="wipay_payment.action_server"/>
+-->
+  </data>
+</odoo>
