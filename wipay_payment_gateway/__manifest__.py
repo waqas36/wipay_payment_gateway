@@ -1,23 +1,19 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "wipay_payment",
+    'name': "WiPay Payment Gateway",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        We've simplified the payment process To Grow your business by expanding into new markets.""",
 
     'description': """
-        Long description of module's purpose
+        We've simplified the payment process To Grow your business by <br/> expanding into new markets.
     """,
-
-    'author': "My Company",
-    'website': "http://www.yourcompany.com",
 
     # Categories can be used to filter modules in modules listing
     # Check https://github.com/odoo/odoo/blob/14.0/odoo/addons/base/data/ir_module_category_data.xml
     # for the full list
     'category': 'Uncategorized',
-    'version': '0.1',
+    'version': '14.0',
 
     # any module necessary for this one to work correctly
     'depends': ['base', 'payment'],
@@ -31,6 +27,19 @@
         'views/payment.xml',
         'views/payment_transaction.xml',
     ],
+    'images': [
+        'static/description/banner.jpg',
+    ],
+    # Author
+    'author': 'Index World',
+    'website': 'https://indexworld.net/',
+    'maintainer': 'Index World',
+
+    # Technical
+    'price': 200,
+    'currency': 'USD',
+    'installable': True,
+    'auto_install': False,
     # only loaded in demonstration mode
     # 'demo': [
     #     'demo/demo.xml',
